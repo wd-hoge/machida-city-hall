@@ -19,7 +19,6 @@
 .menu-list {
   display: flex;
   justify-content: flex-end;
-  list-style: none;
   margin: 0;
   padding-bottom: 20px;
 }
@@ -43,7 +42,6 @@
 }
 
 .menu-list__link {
-  text-decoration: none;
   font-size: 14px;
   color: #000;
 }
@@ -68,6 +66,7 @@
   width: 220px;
   margin: 0;
   padding: 10px 15px;
+  font-weight: bold;
   font-size: 20px;
   color: #074a9b;
 }
@@ -75,7 +74,6 @@
 .safety-list {
   display: flex;
   flex: 1;
-  list-style: none;
   flex-wrap: wrap;
   padding: 13.6px 30px 13.6px 0;
   margin: 0;
@@ -92,7 +90,7 @@
   color: #000;
 }
 
-.middle-block {
+.search-question-block {
   display: flex;
 }
 
@@ -170,4 +168,274 @@
   background-color: #fff;
   border-radius: 2rem;
   font-size: 14px;
+}
+
+.infomation-event-block {
+  background: linear-gradient(90deg, #f2f2ed 0 50%, #fafaf8 50% 100%);
+  padding: 40px 10px 30px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.infomation-event-block__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.infomation-event-section {
+  width: 590px;
+  padding: 0 10px;
+}
+
+.infomation-event-section--space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infomation-event-section__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #074a9b;
+}
+
+.infomation-event-section__container {
+  display: grid;
+  grid-template-columns: 280px 290px;
+  padding-bottom: 35px;
+}
+
+.infomation-event-img-block {
+  padding-bottom: 10px;
+}
+
+.infomation-event-img-block__img {
+  padding-top: 12px;
+}
+
+.infomation-event-img-block__text {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.infomation-event-link-block {
+  display: flex;
+  padding: 8px 0;
+}
+
+.infomation-event-link-block__link {
+  text-align: center;
+  background-color: #ffffff;
+  margin-right: 10px;
+  font-size: 15px;
+  flex: 1;
+  height: 45.5px;
+  line-height: 45.5px;
+}
+
+.infomation-event-link-block__link--gray {
+  background-color: #e8e8df;
+}
+
+.infomation-event-list-block {
+  padding: 12px 5px;
+}
+
+.infomation-event-list-block__item {
+  font-size: 15px;
+  padding: 8px 10px 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #fff;
+}
+
+.infomation-event-list-block__link {
+  text-decoration: underline;
+}
+
+.infomation-event-left-link-block {
+  padding: 0 13.6px 13.6px;
+  margin-bottom: 1px;
+}
+
+.infomation-event-left-link-block__link {
+  display: block;
+  padding: 0 28px;
+  background-color: #fff;
+  height: 43.2px;
+  line-height: 43.2px;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.life-information-block {
+  padding: 40px 20px 100px;
+  background-image: url("../img/2020_top_sec07_bg.png");
+  background-size: cover;
+}
+
+.container--life-information {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.life-information-panel-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.life-information-panel-block__link {
+  display: block;
+  width: 176px;
+  padding: 12px 0 22px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.life-information-panel-block__img {
+  padding-top: 20px;
+}
+
+.life-information-panel-block__title {
+  padding: 20px 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.life-information-list-block {
+  display: flex;
+  padding-top: 40px;
+}
+
+.life-information-list-block__item {
+  padding: 0 10px 10px 0;
+}
+
+.life-information-list-block__link {
+  display: block;
+  background-color: #fff;
+  padding: 9px 30px;
+  font-size: 14px;
+  border-radius: 2em;
+}
+
+.municipal-government-block {
+  background-color: #074a9b;
+  padding-top: 45px;
+}
+
+.municipal-government-block__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container--municipal-government {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 35px;
+}
+
+.municipal-government-img-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.municipal-government-indicators-block {
+  padding: 25px 0;
+  display: flex;
+}
+
+.indicators {
+  display: grid;
+  grid-template-rows: 40px 40px;
+  width: 440px;
+}
+
+.indicators__header {
+  display: flex;
+  align-items: baseline;
+}
+
+.indicators__text--date {
+  margin-left: 20px;
+}
+
+.indicators__main {
+  display: flex;
+}
+
+.indicators__left-element {
+  padding-right: 24px;
+}
+
+.indicators__text {
+  font-size: 14px;
+  color: #fff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", "メイリオ";
+}
+
+.indicators__text--title {
+  margin-left: 35px;
+}
+
+.indicators__text--subtitle {
+  padding-right: 14px;
+}
+
+.indicators__text--date {
+  font-size: 16px;
+}
+
+.indicators__text--large-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+}
+
+.statistics__link {
+  font-size: 15px;
+  background-color: #fff;
+  padding: 10px 45px 10px 35px;
+}
+
+.municipal-government-list-block {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid #fff;
+}
+
+.municipal-government-list-block__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  height: 150px;
+  color: #fff;
+}
+
+.municipal-government-list-block__text {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  align-items: center;
+  padding: 10px 10px 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.municipal-government-list-block__link--white {
+  background-color: #fff;
+  color: #074a9b;
 }
