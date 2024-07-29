@@ -60,6 +60,7 @@
   background-color: #f2f2ed;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 
 .safety-infomation__title {
@@ -107,14 +108,45 @@
   padding: 0 30px 10px;
 }
 
-.search-block__search {
-  padding: 0 30px 10px;
-  font-weight: bold;
+.search-block__subtitle-triangle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 84px;
+  bottom: -4px;
+  border-top: 5px solid #fff;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
 }
 
-.search-block__question {
+.search-block__subtitle {
   padding: 0 30px 10px;
   font-weight: bold;
+  position: relative;
+}
+
+.search-block__subtitle-separator::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -1px;
+  width: 1px;
+  height: 35px;
+  top: -1px;
+  background-color: #fff;
+}
+
+.search-block__subtitle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 1px;
+  width: 140px;
+  height: 3.5px;
+  background-color: #fff;
 }
 
 .search-input {
@@ -236,6 +268,22 @@
   flex: 1;
   height: 45.5px;
   line-height: 45.5px;
+  position: relative;
+}
+
+.infomation-event-link-block__link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  margin: auto 0;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid #074a9b;
+  border-right: 2px solid #074a9b;
+  transform: rotate(45deg);
 }
 
 .infomation-event-link-block__link--gray {
@@ -270,6 +318,22 @@
   line-height: 43.2px;
   text-decoration: underline;
   font-size: 16px;
+  position: relative;
+}
+
+.infomation-event-left-link-block__link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #074a9b;
+  border-right: 2px solid #074a9b;
+  transform: rotate(45deg);
 }
 
 .life-information-block {
@@ -330,9 +394,6 @@
 
 .municipal-government-block__title {
   color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
 }
 
 .container--municipal-government {
@@ -407,6 +468,22 @@
   font-size: 15px;
   background-color: #fff;
   padding: 10px 45px 10px 35px;
+  position: relative;
+}
+
+.statistics__link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 14px;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid #074a9b;
+  border-right: 2px solid #074a9b;
+  transform: rotate(45deg);
 }
 
 .municipal-government-list-block {
@@ -438,4 +515,181 @@
 .municipal-government-list-block__link--white {
   background-color: #fff;
   color: #074a9b;
+}
+
+.related-information-block {
+  padding: 40px 0 70px;
+}
+
+.related-information-block__stop-btn {
+  display: block;
+  margin-left: auto;
+  background-color: #074a9b;
+  color: #fff;
+  font-weight: bold;
+  background-image: url("../img/2020_top_carousel_stop.png");
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  padding: 5px 10px 5px 35px;
+}
+
+.related-information-block__informations {
+  display: flex;
+  padding: 35px 0 0 10px;
+}
+
+.related-information-panel__img {
+  width: 224px;
+  height: 152px;
+}
+
+.related-information-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-right: 10px;
+}
+
+.related-information-panel__title {
+  width: 204px;
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 0 10px;
+}
+
+.machida-information-block {
+  background-image: url("../img/2020_top_sec10_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 120px 0;
+}
+
+.machida-information-block__imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.machida-information-block__links {
+  padding: 70px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.machida-information-link-block {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 560px;
+  height: 155px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.machida-information-block__subtitle-img {
+  padding: 13.6px 0;
+}
+
+.machida-information-link-block__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #074a9b;
+}
+
+.ads-block {
+  padding: 40px 10px;
+  background-color: #cddbeb;
+}
+
+.ads-block__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ad-imgs {
+  margin: 0 auto;
+  display: flex;
+  width: 700px;
+}
+
+.ad-imgs__item {
+  margin: 0 12px 10px 0;
+}
+
+.footer {
+  background-color: #074a9b;
+  color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  padding: 50px 0 30px;
+}
+
+.footer-img-block {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.footer-img-block__img {
+  width: 279px;
+  height: 73px;
+}
+
+.footer__right-block {
+  display: flex;
+}
+
+.address {
+  width: 450px;
+  margin-right: 55px;
+}
+
+.address__text + .address__text {
+  margin-top: 16px;
+}
+
+.address__phone-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-link-block {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.footer-link-block__link {
+  border: 1px solid #fff;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-image: url("../img/2020_foot_link_icon.png");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+.overview-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.overview-block__list {
+  display: flex;
+}
+
+.overview-block__item {
+  padding: 0 15px;
+  border-right: 1px solid #fff;
+  text-decoration: underline;
 }
